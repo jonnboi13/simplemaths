@@ -27,4 +27,4 @@ jobs:
         uses: r-lib/actions/check-r-package@v2
 
       - name: Check Lint
-        uses: r-lib/actions/lint-r-package@v2
+        run: Rscript -e "lintr::lint_package()"
